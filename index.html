@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="icon" sizes="32x32" type="image/png" href="asset/images/favicon-32x32.png">
+    <link rel="stylesheet" href="asset/style.css">
+
+    <script src="app.js" defer></script>
+    
+    <title>interactive pricing component main</title>
+</head>
+<body>
+    <header>
+        <h1>Simple, traffic-based pricing</h1>
+        <p class="header-description"> Sign-up for our 30-day trial.
+            <br> No credit card required.
+     </p>
+    </header>
+
+    <main>
+      <div class="slider-and-prices">
+        <h2 id="pageviews"></h2>
+        <div class="slider-container">
+            <input type="range" class="slider" id="range" min="0" max="100" step="25">
+            <div class="progress"></div>
+          </div>
+         
+          <div class="price-container">
+            <span id="price"></span>
+            <span id="duration">/ month</span>
+          </div>
+        </div>
+          <div class="billing">
+            <p class="monthly">Monthly Billing</p>
+            <label class="switch">
+                <input type="checkbox" id="billing-checkbox">
+                <span class="check-slider round"></span>
+              </label>
+              <p class="yearly">Yearly Billing</p>
+              <div class="discount-container">
+              <p class="discount-text">25% <span class="discount-hidden-text">discount</span></p>
+            </div>
+          </div>
+          <hr>
+          <div class="benefits-and-button">
+            <div class="benefits">
+          <span class="benefit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+            <p>Unlimited websites</p>
+          </span>
+          
+          <span class="benefit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+            <p>100% data ownership</p>
+          </span>
+          
+          <span class="benefit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>
+            <p>Email reports</p>
+          </span>
+        </div>
+
+
+          <button>Start my trial</button>
+        </div>
+    </main>
+</body>
+</html>

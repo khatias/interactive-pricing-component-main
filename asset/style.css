@@ -1,0 +1,350 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body{
+    font-family: "Manrope", sans-serif;
+    height: 100vh;
+    background-image: url(../asset/images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-image: url(../asset/images/pattern-circles.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 89px 32px 118px;
+}
+
+h1{
+    color: #293356;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800; 
+}
+
+.header-description{
+    color: #848EAD;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 2.3rem;
+}
+
+main{
+    width: 32.7rem;
+    height: 47.8rem;
+    border-radius: 0.8rem;
+    background: #FFF;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pageviews{
+    color: #848EAD;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 1.714px;
+    text-transform: uppercase;
+    padding-top: 3.4rem;
+}
+
+.slider-container{
+    padding: 4.1rem 0rem;
+}
+
+#range {
+  border-radius: 5px;
+  width: 279px;
+  height: 8px;
+  outline: none;
+  appearance: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 4rem;
+  -webkit-appearance: none;
+  height: 4rem;
+  border-radius: 50%;
+  background-image: url(../asset/images/icon-slider.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #10D8C4;
+}
+ 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 2.2rem;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .check-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #CFD8EF;
+    transition: .4s;
+  }
+
+  .check-slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+  }
+
+  input:checked + .check-slider {
+    background-color: #7AEADF;
+  }
+  
+  input:checked + .check-slider:before {
+    transform: translateX(21px);
+  }
+  
+  .check-slider.round {
+    border-radius: 34px;
+  }
+  
+  .check-slider.round:before {
+    border-radius: 50%;
+  }
+
+  .price-container{
+    padding-bottom: 3.6rem;
+    display: flex;
+    align-items: center;
+  }
+
+#price{
+    color: #293356;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+}
+
+#duration{
+    color: #848EAD;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.billing{
+    display: flex;
+    align-items: center;
+    padding-bottom: 3.8rem;
+}
+
+.monthly, .yearly{
+    color: #848EAD;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.monthly{
+    padding-right: 1.2rem;
+}
+
+.yearly{
+    padding-left: 1.2rem;
+}
+
+.discount-container{
+    border-radius: 9.5px;
+    background: #FEEDE8;
+    width: 4.1rem;
+    height: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5.5px;
+}
+
+.discount-text{
+    color: #FF8D68;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: normal;
+  
+}
+
+.discount-hidden-text{
+    display:none;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    background: #ECF0FB;
+    border: none;
+    margin-bottom: 2.4rem;
+}
+
+.benefit{
+    display: flex;
+    justify-content: center;
+    gap:5px;
+}
+
+.benefits p{
+    color: #848EAD;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 1.1rem;
+}
+
+button{
+    width: 17rem;
+    height: 4.1rem;
+    border-radius: 20.5px;
+    background: #293356;
+    border: none;
+    cursor: pointer;
+    color: #BECDFF;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top:2.2rem;
+}
+
+@media (min-width: 1440px) {
+
+body{
+    background-size: 100% 56%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    padding-top:0px;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+.header-description{
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+
+br{
+    display: none;
+  }
+
+main{
+    width: 54rem;
+    height: 39.7rem;
+    align-items: flex-start;
+  }
+
+.slider-and-prices{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top:4rem;
+    padding-left: 4.6rem;
+    padding-bottom:4rem;
+    padding-right: 4.8rem;
+  }
+
+.slider-container{
+    padding-bottom: 0px;
+  }
+
+#pageviews{
+    order:1;
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 0px;
+  }
+
+.price-container{
+    order: 2;
+    padding: 0px;
+    justify-content:flex-end;
+  }
+
+.slider-container{
+    order: 3;
+    grid-column: span 2; 
+  }
+
+#range{
+    width: 444px;
+    height: 8px;
+    
+  }
+
+#price{
+    font-size: 4.0rem;
+    letter-spacing: -1px;
+  }
+
+#duration{
+    font-size: 1.6rem;
+  }
+
+.discount-container{
+    width: 8rem;
+    height: 1.9rem;
+  } 
+
+.discount-hidden-text{
+    display:inline-block;
+  }
+
+.billing{
+    padding-left: 15.4rem;
+  }
+
+hr{
+    margin-bottom: 3.2rem;
+  }
+
+.benefits-and-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 48px;
+    padding-right: 44px;
+  }
+
+.benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+button{
+    margin:0px;
+  }
+}
